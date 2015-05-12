@@ -1,3 +1,11 @@
+- git push to load s.th. onto emote,
+- git pull to download s.th. from remote, git pull origin master
+
+
 When would you want to use a remote repository rather than keeping all your work local?
 - when accessing it from different locations/computers
 - when colaborating
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+- you often can't control who makes changes to the remote respository
+- these changes might be wrong/unwanted etc.
