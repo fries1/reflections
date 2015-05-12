@@ -1,0 +1,41 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- helps finding typos
+- mistake is often in the new parts when it worked before
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+- makes it possible to look and compare old to new code to e.g. see how you have improved
+- lets you revert back to the old version if your "improvments" did not fulfill what they promised
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+- takes effort to manually commit
+- risk of forgetting to commit
+- risk of committing not enough/too much
+- lets you save in logical steps
+- you can best judge when it makes sense to commit
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+- depends on the domain of theier use: when writing plain text usually only one file is involed
+- while in coding you often have several interdependant files
+
+How can you use the commands git log and git diff to view the history of files?
+- use arrow down to scroll down and q to quit
+- git log gives you all the commits with IDs, commit message and date
+- git diff id1 id2 lets you compare the changes between two commits, + for addiotions and - deletes
+
+How might using version control make you more confident to make changes that could break something?
+- because you can always revert to previous versions that worked
+
+Now that you have your workspace set up, what do you want to try using Git for?
+- code. code. code and revert
+
+changes between two documents:
+from folder which holds both docs
+diff -u old.file new.file
+
+git diff is similar to diff.
+
+
+git commands:
+git log --stat 			git log with statistics about the files that changed
+git diff #id1 #id2		compares two commits
+git clone url 			clones the whole repository to the current directory

@@ -1,0 +1,55 @@
+- a git repository stores meta files containing the version histories of files
+- use ls -a to show hidden files, like .git
+- git init creates a new git repository
+- git add file x, adds file x to the staging area
+- git status shows the current status
+- staging area is the area in which files are before they are commited
+- working area is the directory
+- when commiting: write in comman tone
+- git diff with no argumets shows you the difference between the staging area and the working directory
+- git diff --staged shows you the difference between the staging area and the most recent commit
+- git reset --hard removes any changes in the working directory or the staging area
+- use branching for experimenting code or different versions (eg language)
+- merging is the process of combining two branches
+- git branch with no arguments shows you the currently existing branches
+- git branch argument-name creats a new branch with the name argument
+- the * next to branchname shows the currently checked out branch
+- git checkout argument changes the currently checked out branch
+- branches are also useful when you colaborate with others as everyone can work on his/her own branch
+- checking out other people's branches:
+	- remote branch: means that it is another person' s branch
+	- once checked out, these branches behave just like your own branches
+- git checkout -b branch name lets you create a new branch
+- merging two branches, takes three commits: the most recent master commint, the most recent branch to merge with master commit and the commit at which the branches diverged
+use merge branch1 branch2 to merge two branches (make sure to checkout master branch first)
+- git log --graph --oneline branch1 branch2
+- conflict detection if there is any ambiguity at all
+
+What happens when you initialize a repository? Why do you need to do it?
+- git creates a new empty repository with no commits
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+- the stating area is inbetween working directory and repository. It holds the files that are meant to be commited in the
+ future.
+
+ How can you use the staging area to make sure you have one commit per logical change?
+ - i can compare the staging area with the working directory and look at the changes shown
+
+ What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+ -branches can be helpful when you want to implement or test some experimental features or when you want to create a new
+  version of the code but still want to work on the old version in the future
+ - think of context changes
+ - you still want to have your master branch and then you can have development branches and experimental branches or unique
+  feature branches
+
+How do the diagrams help you visualize the branch structure?
+- the diagrams show which commits are reachable in each branch
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- Merging branches combines the additions and subtractions made in both coins into one branch
+- Diagrams help visualizing the results
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manual
+- automatic merges can relieve humans from a lot of work
+- manual merges can be more exact and should be done to avoid ambiguities
+
